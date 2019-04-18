@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 320b1c2af77554f99a1658df4a6d3d5c
+labels:
+- Robot
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
