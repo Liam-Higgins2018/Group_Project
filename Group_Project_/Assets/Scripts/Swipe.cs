@@ -27,7 +27,7 @@ public class Swipe : MonoBehaviour
             if (touch.phase == TouchPhase.Ended)
             {
                 fingerDownPosition = touch.position;
-                DetectSwipe();
+                //DetectSwipe();
             }
         }
     }
@@ -37,5 +37,5 @@ public struct SwipeData
 {
     public Vector2 StartPosition;
     public Vector2 EndPosition;
-    public SwipeDirection Direction;
+    //public SwipeDirection Direction;
 }
