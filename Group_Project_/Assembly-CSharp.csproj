@@ -56,11 +56,12 @@
      <Compile Include="Assets\Scripts\Character.cs" />
      <Compile Include="Assets\Scripts\Gestures.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
-     <Compile Include="Assets\Scripts\Heath.cs" />
+     <Compile Include="Assets\Scripts\MoveCharacter.cs" />
      <Compile Include="Assets\Scripts\PrefabManager.cs" />
      <Compile Include="Assets\Scripts\SimpleCharacterControl.cs" />
      <Compile Include="Assets\Scripts\Swipe.cs" />
      <Compile Include="Assets\Scripts\SwipeLogger.cs" />
+     <Compile Include="Assets\Scripts\test.cs" />
      <None Include="Assets\Cartoon Temple Building Kit\ReadMe.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/James Mullarkey/Documents/GitHub/Group_Project/Group_Project_/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
