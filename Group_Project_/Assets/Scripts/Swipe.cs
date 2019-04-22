@@ -51,9 +51,14 @@ public class Swipe : MonoBehaviour
             }
             else
             {
+                //var swipeSpace = 5;
                 var direction = fingerDownPosition.x - fingerUpPosition.x > 0 ? SwipeDirection.Right : SwipeDirection.Left;
                 SendSwipe(direction);
-                //transform.translate(5f,0,0);
+                /*while()
+                {
+                    
+                //transform.Translate(5f * Time.deltaTime ,0 ,0);
+                }*/
             }
             fingerUpPosition = fingerDownPosition;
         }

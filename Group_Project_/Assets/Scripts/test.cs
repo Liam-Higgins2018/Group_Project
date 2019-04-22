@@ -13,6 +13,9 @@ public class test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(5f * Time.deltaTime ,0 ,0);
+        /*while()
+        {
+            transform.Translate(5f * Time.deltaTime ,0 ,0);
+        }*/
     }
 }
