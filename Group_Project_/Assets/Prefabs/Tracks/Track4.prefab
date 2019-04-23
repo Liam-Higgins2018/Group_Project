@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &6536374437833147886
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98900686173544750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 10, z: 8}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &98182161105087152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10,7 +23,7 @@ PrefabInstance:
     - target: {fileID: 2856174306570526170, guid: 3051778d9b0e4e94b8e747eb72df6240,
         type: 3}
       propertyPath: m_Name
-      value: Track4 Variant
+      value: Track4
       objectReference: {fileID: 0}
     - target: {fileID: 4391873702012206228, guid: 3051778d9b0e4e94b8e747eb72df6240,
         type: 3}
@@ -97,6 +110,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4444984641574917668}
     m_Modifications:
+    - target: {fileID: 1000013311032376, guid: ba861b6b4f5559f41a4f1188440fe846, type: 3}
+      propertyPath: m_Name
+      value: Example Pieced Prefab 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010542303642, guid: ba861b6b4f5559f41a4f1188440fe846, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.094635
@@ -153,9 +170,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1000013311032376, guid: ba861b6b4f5559f41a4f1188440fe846, type: 3}
-      propertyPath: m_Name
-      value: Example Pieced Prefab 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba861b6b4f5559f41a4f1188440fe846, type: 3}
+--- !u!1 &98900686173544750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013311032376, guid: ba861b6b4f5559f41a4f1188440fe846,
+    type: 3}
+  m_PrefabInstance: {fileID: 98182161395752214}
+  m_PrefabAsset: {fileID: 0}
