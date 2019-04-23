@@ -26,8 +26,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.07906459, z: 1}
   m_Center: {x: 0, y: 0.039532237, z: 0.0000076293945}
---- !u!135 &1723074733840762749
-SphereCollider:
+--- !u!65 &3499303603899794288
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -37,10 +37,10 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.6085762
+  m_Size: {x: 0.44685403, y: 3.2171524, z: 3.0596948}
   m_Center: {x: -0.000015258789, y: 0, z: 0}
---- !u!135 &2756967671063703868
-SphereCollider:
+--- !u!65 &418855510348558511
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -50,7 +50,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.6085762
+  m_Size: {x: 0.44685403, y: 3.2171524, z: 3.0596948}
   m_Center: {x: 0.000015258789, y: 0, z: 0}
 --- !u!1001 &7752155292699752712
 PrefabInstance:
@@ -391,11 +391,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2856174306570526170, guid: 3051778d9b0e4e94b8e747eb72df6240,
-        type: 3}
-      propertyPath: m_Name
-      value: Track3
-      objectReference: {fileID: 0}
     - target: {fileID: 4391873702012206228, guid: 3051778d9b0e4e94b8e747eb72df6240,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -450,6 +445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856174306570526170, guid: 3051778d9b0e4e94b8e747eb72df6240,
+        type: 3}
+      propertyPath: m_Name
+      value: Track3
       objectReference: {fileID: 0}
     - target: {fileID: 3021598847251331642, guid: 3051778d9b0e4e94b8e747eb72df6240,
         type: 3}
