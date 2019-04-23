@@ -22,11 +22,56 @@ public class test : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             var swipeSpace = 0;
-            while(swipeSpace < 500)
-            {
-                swipeSpace++;
-                //transform.Translate(transform.position.x ,transform.position.y ,transform.position.z);
-            }
+            //while(swipeSpace < 1)
+            //{
+                //swipeSpace++;
+                //transform.Translate(transform.position.x ,0 ,0);
+                //playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+                var pos = transform.position;
+                pos.x += 0.5f;
+                transform.position = pos;
+            //}
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            var swipeSpace = 0;
+            //while(swipeSpace < 1)
+            //{
+                //swipeSpace++;
+                //transform.Translate(transform.position.x ,0 ,0);
+                //playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+                var pos = transform.position;
+                pos.x -= 0.5f;
+                transform.position = pos;
+            //}
+        }
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            var swipeSpace = 0;
+            //while(swipeSpace < 1)
+            //{
+                //swipeSpace++;
+                //transform.Translate(transform.position.x ,0 ,0);
+                //playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+                var pos = transform.position;
+                pos.z += 0.5f;
+                transform.position = pos;
+            //}
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            var swipeSpace = 0;
+            //while(swipeSpace < 1)
+            //{
+                //swipeSpace++;
+                //transform.Translate(transform.position.x ,0 ,0);
+                //playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+                var pos = transform.position;
+                pos.y += 5f;
+                transform.position = pos;
+                //pos.y -= 5f;
+                //transform.position = pos;
+            //}
         }
     }
 }
