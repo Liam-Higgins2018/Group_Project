@@ -6,7 +6,6 @@ public class test : MonoBehaviour
 {
     //public static bool firstRight = true;
     //public static bool firstLeft = true;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +17,6 @@ public class test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        //> 11.5
-        //< -9
         if (Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < 11)
         {
             var swipeSpace = 0;
@@ -36,7 +32,6 @@ public class test : MonoBehaviour
                     pos.x += 0.005f;
                     transform.position = pos;
                 }
-                
             }
             else
             {*/

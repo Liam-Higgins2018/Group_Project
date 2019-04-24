@@ -9,10 +9,10 @@ public class Swipe : MonoBehaviour
     private Vector2 fingerUpPosition;
     
     [SerializeField]
-    private bool detectSwipeOnlyAfterRelease = false;
+    private bool detectSwipeOnlyAfterRelease = true;
 
     [SerializeField]
-    private float minDistanceForSwipe = 20f;
+    private float minDistanceForSwipe = 5f;
 
     public static event Action<SwipeData> OnSwipe = delegate { };
 
@@ -67,7 +67,7 @@ public class Swipe : MonoBehaviour
                     {
                         swipeSpace++;
                         var pos = transform.position;
-                        pos.x += 0.01f;
+                        pos.x += 0.01f * Time.deltaTime;
                         transform.position = pos;
                     }
                 }
@@ -79,7 +79,7 @@ public class Swipe : MonoBehaviour
                     {
                         swipeSpace++;
                         var pos = transform.position;
-                        pos.x -= 0.01f;
+                        pos.x -= 0.01f * Time.deltaTime;
                         transform.position = pos;
                     }
                 }
