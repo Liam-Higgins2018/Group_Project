@@ -12,7 +12,7 @@ public class Swipe : MonoBehaviour
     private bool detectSwipeOnlyAfterRelease = true;
 
     [SerializeField]
-    private float minDistanceForSwipe = 5f;
+    private float minDistanceForSwipe = 2f;
 
     public static event Action<SwipeData> OnSwipe = delegate { };
 
@@ -59,7 +59,7 @@ public class Swipe : MonoBehaviour
                     
                 //transform.Translate(5f * Time.deltaTime ,0 ,0);
                 }*/
-                if(fingerDownPosition.y < fingerUpPosition.y && transform.position.x < 11)
+                if(fingerDownPosition.x > fingerUpPosition.x && transform.position.x < 11)
                 {
                     var swipeSpace = 0;
             
@@ -67,11 +67,11 @@ public class Swipe : MonoBehaviour
                     {
                         swipeSpace++;
                         var pos = transform.position;
-                        pos.x += 0.01f * Time.deltaTime;
+                        pos.x += 0.01f;
                         transform.position = pos;
                     }
                 }
-                else if(fingerDownPosition.y > fingerUpPosition.y && transform.position.x > -8.5)
+                else if(fingerDownPosition.x < fingerUpPosition.x && transform.position.x > -8.5)
                 {
                     var swipeSpace = 0;
             
@@ -79,7 +79,7 @@ public class Swipe : MonoBehaviour
                     {
                         swipeSpace++;
                         var pos = transform.position;
-                        pos.x -= 0.01f * Time.deltaTime;
+                        pos.x -= 0.01f;
                         transform.position = pos;
                     }
                 }
