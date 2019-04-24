@@ -41,7 +41,6 @@ public class test : MonoBehaviour
                     pos.x += 0.005f;
                     transform.position = pos;
                 }
-                
             }
             else
             {*/
