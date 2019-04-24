@@ -7,6 +7,7 @@ public class Score : MonoBehaviour
 {
     private float score = 0.0f;
     public Text textScore;
+    public DeathMenu deathMenu;
     public int levelDifficulty = 1;
     private int levelDifficultyMax = 10;
     private int scoreToNextLevel = 10;
@@ -37,10 +38,20 @@ public class Score : MonoBehaviour
         }
         scoreToNextLevel *= 2;
         levelDifficulty++;
+
+        var run = transform.position;
+        run.z += 10.0f;
+        transform.position = run;
     }
 
     public void OnDeath()
     {
         _isDead = true;
+        
+        if(PlayerPrefs.GetFloat("Highscore") < score)
+        {
+            PlayerPrefs.SetFloat("Highscore", score);
+        }
+        deathMenu.ToggleEndMenu(score);
     }
 }
