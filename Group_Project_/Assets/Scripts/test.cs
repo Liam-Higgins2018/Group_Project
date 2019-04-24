@@ -4,21 +4,15 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
-    public static bool firstRight = true;
-    public static bool firstLeft = true;
+    //public static bool firstRight = true;
+    //public static bool firstLeft = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        /*var swipeSpace = 0;
-        while(swipeSpace < 500)
-        {
-            swipeSpace++;
-            transform.Translate(1f * Time.deltaTime ,0 ,0);
-        }*/
-        
-           
-        
+        var pos = transform.position;
+        pos.x = 1.250103f;
+        transform.position = pos;
     }
 
     // Update is called once per frame
@@ -31,7 +25,7 @@ public class test : MonoBehaviour
         {
             var swipeSpace = 0;
             
-            if(firstRight == true && firstLeft == true)
+            /*if(firstRight == true && firstLeft == true)
             {
                 firstRight = false;
                 firstLeft = false;
@@ -45,7 +39,7 @@ public class test : MonoBehaviour
                 
             }
             else
-            {
+            {*/
                 while(swipeSpace < 500)
                 {
                     swipeSpace++;
@@ -53,12 +47,12 @@ public class test : MonoBehaviour
                     pos.x += 0.01f;
                     transform.position = pos;
                 }
-            }
+            //}
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow) && transform.position.x > -8.5)
         {
             var swipeSpace = 0;
-            if(firstRight == true && firstLeft == true)
+            /*if(firstRight == true && firstLeft == true)
             {
                 firstRight = false;
                 firstLeft = false;
@@ -67,18 +61,15 @@ public class test : MonoBehaviour
                 transform.position = pos;
             }
             else
-            {
+            {*/
                 var pos = transform.position;
                 pos.x -= 5f;
                 transform.position = pos;
-            }
+            //}
         }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            var pos = transform.position;
-            pos.z += 0.5f;
-            transform.position = pos;
-        }
+            var run = transform.position;
+            run.z += 0.5f;
+            transform.position = run;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             var swipeSpace = 0;

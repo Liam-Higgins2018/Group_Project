@@ -985,6 +985,7 @@ GameObject:
   - component: {fileID: 1993940915}
   - component: {fileID: 1993940919}
   - component: {fileID: 1993940920}
+  - component: {fileID: 1993940921}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1085,3 +1086,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec465d2a10137274fbbdb92289d1cbe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1993940921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993940914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd647d8cefe160a4fb590065f1bd5351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectSwipeOnlyAfterRelease: 1
+  minDistanceForSwipe: 20

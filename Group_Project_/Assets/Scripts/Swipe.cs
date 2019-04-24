@@ -59,6 +59,30 @@ public class Swipe : MonoBehaviour
                     
                 //transform.Translate(5f * Time.deltaTime ,0 ,0);
                 }*/
+                if(fingerDownPosition.y < fingerUpPosition.y && transform.position.x < 11)
+                {
+                    var swipeSpace = 0;
+            
+                    while(swipeSpace < 500)
+                    {
+                        swipeSpace++;
+                        var pos = transform.position;
+                        pos.x += 0.01f;
+                        transform.position = pos;
+                    }
+                }
+                else if(fingerDownPosition.y > fingerUpPosition.y && transform.position.x > -8.5)
+                {
+                    var swipeSpace = 0;
+            
+                    while(swipeSpace < 500)
+                    {
+                        swipeSpace++;
+                        var pos = transform.position;
+                        pos.x -= 0.01f;
+                        transform.position = pos;
+                    }
+                }
             }
             fingerUpPosition = fingerDownPosition;
         }
