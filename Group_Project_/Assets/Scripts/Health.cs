@@ -15,12 +15,6 @@ public class Health : MonoBehaviour
     //Holds empty heart image
     public Sprite emptyHeart;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -52,4 +46,6 @@ public class Health : MonoBehaviour
             }
         }
     }
+        
 }
+
