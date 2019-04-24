@@ -7,7 +7,7 @@ public class Score : MonoBehaviour
 {
     private float score = 0.0f;
     public Text textScore;
-    private int levelDifficulty = 1;
+    public int levelDifficulty = 1;
     private int levelDifficultyMax = 10;
     private int scoreToNextLevel = 10;
 
@@ -30,9 +30,5 @@ public class Score : MonoBehaviour
         }
         scoreToNextLevel *= 2;
         levelDifficulty++;
-
-        var run = transform.position;
-        run.z += 5.0f;
-        transform.position = run;
     }
 }
