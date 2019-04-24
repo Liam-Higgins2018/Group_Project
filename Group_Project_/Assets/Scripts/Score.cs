@@ -8,7 +8,7 @@ public class Score : MonoBehaviour
     private float score = 0.0f;
     public Text textScore;
     public DeathMenu deathMenu;
-    private int levelDifficulty = 1;
+    public int levelDifficulty = 1;
     private int levelDifficultyMax = 10;
     private int scoreToNextLevel = 10;
 
