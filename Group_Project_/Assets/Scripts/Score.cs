@@ -11,9 +11,16 @@ public class Score : MonoBehaviour
     private int levelDifficultyMax = 10;
     private int scoreToNextLevel = 10;
 
+    private bool _isDead = false;
+
     // Update is called once per frame
     void Update()
     {
+        if(_isDead == true)
+        {
+            return;
+        }
+        
         if(score >= scoreToNextLevel)
         {
             LevelUp();
@@ -34,5 +41,10 @@ public class Score : MonoBehaviour
         var run = transform.position;
         run.z += 5.0f;
         transform.position = run;
+    }
+
+    public void OnDeath()
+    {
+        _isDead = true;
     }
 }

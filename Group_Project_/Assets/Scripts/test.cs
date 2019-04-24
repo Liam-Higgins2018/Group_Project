@@ -6,7 +6,8 @@ public class test : MonoBehaviour
 {
     //public static bool firstRight = true;
     //public static bool firstLeft = true;
-
+    private float run = 0.5f;
+    private bool _isDead = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,10 @@ public class test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+         if(_isDead == true)
+        {
+            return;
+        }
 
         //> 11.5
         //< -9
@@ -85,5 +90,16 @@ public class test : MonoBehaviour
                 //transform.position = pos;
             //}
         }
+        Death();
     }
+
+    private void Death()
+        {
+            
+            if(GameObject.Find("Robot_Kyle").GetComponent<Health>().health <= 0)
+            {
+                _isDead = true;
+                GetComponent<Score>().OnDeath();
+            }
+        }
 }
