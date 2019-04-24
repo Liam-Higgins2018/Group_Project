@@ -17,7 +17,6 @@ public class DeathMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void ToggleEndMenu(float score)
