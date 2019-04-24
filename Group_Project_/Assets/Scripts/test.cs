@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
-    //public static bool firstRight = true;
+    public float speed = 0.5f;
+    
     //public static bool firstLeft = true;
     private float run = 0.5f;
     private bool _isDead = false;
     // Start is called before the first frame update
     void Start()
     {
+
         var pos = transform.position;
         pos.x = 1.250103f;
         transform.position = pos;
@@ -71,9 +73,33 @@ public class test : MonoBehaviour
                 transform.position = pos;
             //}
         }
-            var run = transform.position;
-            run.z += 0.5f;
-            transform.position = run;
+
+        if(GameObject.Find("Character").GetComponent<Score>().levelDifficulty == 2)
+        {
+            speed = 0.6f;
+        }
+        else if(GameObject.Find("Character").GetComponent<Score>().levelDifficulty == 3)
+        {
+            speed = 0.7f;
+        }
+        else if(GameObject.Find("Character").GetComponent<Score>().levelDifficulty == 4)
+        {
+            speed = 0.8f;
+        }
+        else if(GameObject.Find("Character").GetComponent<Score>().levelDifficulty == 5)
+        {
+            speed = 0.9f;
+        }
+        else if(GameObject.Find("Character").GetComponent<Score>().levelDifficulty == 6)
+        {
+            speed = 1f;
+        }
+
+        var run = transform.position;
+        run.z += speed;
+        transform.position = run;
+
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             var swipeSpace = 0;
