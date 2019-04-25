@@ -1809,6 +1809,7 @@ GameObject:
   - component: {fileID: 1993940920}
   - component: {fileID: 1993940921}
   - component: {fileID: 1993940922}
+  - component: {fileID: 1993940923}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1923,7 +1924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectSwipeOnlyAfterRelease: 1
-  minDistanceForSwipe: 5
+  minDistanceForSwipe: 0
 --- !u!114 &1993940922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1937,5 +1938,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textScore: {fileID: 1428180706}
-  deathMenu: {fileID: 1303235360}
   levelDifficulty: 1
+--- !u!114 &1993940923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993940914}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07153ace3900d6f4792c02a35090587e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
