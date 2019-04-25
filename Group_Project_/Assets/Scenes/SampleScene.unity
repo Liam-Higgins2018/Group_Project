@@ -1938,6 +1938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textScore: {fileID: 1428180706}
+  deathMenu: {fileID: 1303235360}
   levelDifficulty: 1
 --- !u!114 &1993940923
 MonoBehaviour:
