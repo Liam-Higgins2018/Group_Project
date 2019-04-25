@@ -1,8 +1,7 @@
 Android
 PlayerPath?
-C:/Users/James Mullarkey/Documents/GitHub/Group_Project/Group_Project_/CUNT.apk
+C:/Users/James Mullarkey/Documents/GitHub/Group_Project/Group_Project_/menu.apk
 SceneListBegin?
-Assets/Scenes/SampleScene.unity
 Assets/Scenes/Menu.unity
 SceneListEnd?
 ef8e3a8a4a6b2e9ed403866433903588 Assembly-CSharp.dll:.Score
