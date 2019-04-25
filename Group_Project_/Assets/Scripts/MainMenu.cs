@@ -17,4 +17,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void Quit()
+    {
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
 }
