@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class MainMenu : MonoBehaviour
 {
@@ -20,6 +21,6 @@ public class MainMenu : MonoBehaviour
 
     public void Quit()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        EditorApplication.isPlaying = false;
     }
 }
