@@ -2,6 +2,9 @@
 
 ## User Guide ##
 
+### Our Video Tutorial Link: https://youtu.be/JrHRMYMi_L0 ###
+
+
 Our App is a Single User Endless Runner game aclled Robot Run where the user swipes the screen left or right to avoid obstacles. 
 If the user hits four obstacles its game over!
 Please see the photos below for reference.
@@ -23,6 +26,8 @@ On Opening the the user will encounter the home menudisplaying the users high sc
 
 
 ## Developer Guide ##
+
+#### Our Learning Experiences, Project Plan and Project Diary are outlines in our wiki's ####
 
 We decided we awanted to create a mobile apps game early on in the project. We were thinking about 
 making an Augmented Reality(AR) game simalar to Pokemon Go, but after a some of research and testing code for AR, we 
