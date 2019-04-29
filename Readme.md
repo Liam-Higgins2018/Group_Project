@@ -2,7 +2,7 @@
 
 ## User Guide ##
 
-Our App is an Endless Runner game aclled Robot Run where the user swipes the screen left or right to avoid obstacles. 
+Our App is a Single User Endless Runner game aclled Robot Run where the user swipes the screen left or right to avoid obstacles. 
 If the user hits four obstacles its game over!
 Please see the photos below for reference.
 
@@ -33,3 +33,21 @@ James worked on the character and Liam worked on the envionment.
 We also decided that Unity was the best option for us because we had used it as part of one of our modules in college and 
 we were very interested in learning more about it. We chose Unity to develop in because we wanted to make a modern 3D game 
 that we could still work on after our college project was done.
+
+### Hardware and Software Requirements ###
+
+* The Hardware and Software required to run this app on PC:
+	* A PC with Windows 10, linux or Mac
+	* Unity 2018 installed
+	* Visual Studio Code installed
+	* 2GB storage
+
+* The Hardware and Software required to run this app on Android:
+	* A compatible android device
+	* 32MB storage
+	* Touch screen
+	* Android
+	* Game apk installed (Runners.apk)
+	
+	
+
